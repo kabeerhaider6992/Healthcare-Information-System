@@ -1,0 +1,9 @@
+ID,Name,Age,Gender,Medicine,Diagnosis,Date Added
+4,Haider,22,Male,"Disprine, Omega",,2025-01-01 00:00:00
+5,Shehrish,19,Female,"Buscopan Tablets, Evion 400Mg, Risek 20Mg, Losec 20Mg",2,2025-01-01 00:00:00
+10,Haider,22,Male,"Disprine, Omega, Paracetamol,",,2025-01-01 00:00:00
+11,Shehrish,19,Female,"Buscopan Tablets, Evion 400Mg, Risek 20Mg, Losec 20Mg",2,2025-01-01 00:00:00
+12,Hamza,16,Male,"Disprine,",2,2025-01-01 00:00:00
+13,Imran,22,Male,"Disprine, Paracetamol,",,2025-01-01 00:00:00
+14,Haris,23,Male,"Paracetamol, Doxycycline,",,2025-01-01 00:00:00
+15,Tariq,16,Male,"Kali Bichromicum, Nux Vomica,",Nausea,2025-01-01 00:00:00

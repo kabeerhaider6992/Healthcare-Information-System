@@ -1,0 +1,206 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>General Clinic Slip</title>
+        <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            color: #333;
+            margin: 0;
+            padding: 20mm; 
+            box-sizing: border-box;
+            line-height: 1.5;
+            min-height: 297mm; 
+            position: relative; 
+            font-size: 11pt; 
+        }
+        .container {
+            width: 100%;
+            max-width: 210mm; 
+            margin: 0 auto;
+            position: relative;
+            z-index: 10; 
+        }
+        .header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 60px; /* This creates the empty space at the top for the logo */
+        }
+        /* LOGO CONTAINER STYLING (User Requested: Width 120, Height 150) */
+        .logo-container {
+    position: absolute;
+    top: -10px;   /* Pulls it higher up into the new padding space */
+    right: 10px;  /* Moves it slightly away from the very edge */
+    width: 120px; 
+    height: 120px; /* Keep this square to match your logo shape */
+        }
+        .logo-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        /* CLINIC NAME STYLING (User Requested: Color #FF0000, Size 36pt) */
+        .clinic-name {
+            font-size: 36px; /* USER SET SIZE: changed from pt to px for consistency with CSS usage */
+            font-weight: bold;
+            color: #FF0000; /* USER SET COLOR */
+            margin-bottom: 3px;
+            border-bottom: 2px solid #004d40;
+            padding-bottom: 5px;
+        }
+        .doctor-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #006064; 
+            margin-top: 5px;
+        }
+        .degrees {
+            margin: 5px 0 10px 0;
+            font-size: 11pt;
+            line-height: 1.3;
+        }
+
+        .contact-info {
+            font-size: 11pt;
+            margin-top: 5px;
+            padding: 5px 0;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+        .contact-info p {
+            margin: 2px 0;
+            display: inline-block;
+            width: 48%;
+            text-align: left;
+        }
+        .details-section {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            border: 2px solid #004d40; /* ID Box Border */
+            border-radius: 8px;
+            background-color: #f0fafa; 
+            overflow: hidden; 
+        }
+        .details-section strong {
+            color: #004d40;
+        }
+        .detail-item {
+            float: left;
+            width: 33%;
+            margin-bottom: 5px;
+        }
+        .diagnosis {
+            width: 100%;
+            float: none;
+            margin-top: 10px; 
+            padding-top: 5px;
+            font-size: 14pt;
+            font-weight: bold;
+            color: #cc0000; 
+        }
+        .rx-title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            color: #004d40;
+            margin: 30px 0 10px 0;
+            padding: 5px 20px;
+            border: 3px double #004d40;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        /* NEW STYLING: Content Section Border now matches Details Section Border */
+        .content-section {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 2px solid #004d40; /* MATCHES DETAILS BORDER */
+            border-radius: 8px; /* MATCHES DETAILS BORDER */
+            background-color: #ffffff;
+        }
+        .medicine-list {
+            font-size: 16pt; 
+            margin-left: 20px; 
+            margin-top: 10px;
+            font-weight: bold;
+            white-space: pre-wrap;
+        }
+        .instructions {
+            margin-top: 25px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+            font-size: 12pt;
+        }
+        .signature {
+            margin-top: 70px;
+            padding-top: 10px;
+            border-top: 1px solid #333;
+            text-align: right;
+            font-size: 14pt;
+        }
+
+        @media print {
+            body {
+                padding: 10mm;
+                margin: 0;
+            }
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
+        <script>window.onload = function() { window.print(); };</script>
+    </head>
+    <body>
+        
+        <div class="container">
+            
+        <div class="header">
+            <div class="logo-container">
+                <img src="file:///C%3A/Users/Amj/Documents/pro%20propro/logo.png" class="logo-img" alt="Clinic Logo">
+            </div>
+            <div class="clinic-name">MASOOD CLINIC</div>
+            <div class="doctor-name">DR. KHALID MASOOD</div>
+            <div class="degrees">
+                M.sc, D.H. M.S (PUNJAB)<br>R.H.M.P (NCH)<br>VICE PRINCIPLE - Farabi Homeo Medical College<br>x-Public Health Physician (THQ) Hospital, Shah pur
+            </div>
+            <div class="contact-info">
+                <p><strong>Address:</strong> BLOCK W, NEW SATELLITE TOWN, SARGODHA</p>
+                <p style="text-align: right;"><strong>Contact:</strong> 0300-3500075, 0332-3500075</p>
+            </div>
+        </div>
+    
+
+            <div class="details-section" style="border: none;">
+                <div style="float: right; font-weight: bold;">Date: 09 January, 2026</div>
+                <h2 style="text-align: center; margin-bottom: 20px; color: #004d40;">GENERAL CERTIFICATION / SLIP</h2>
+                <div style="clear: both;"></div>
+            </div>
+
+            <div class="content-section" style="min-height: 250px;">
+                <pre class="content-body" style="font-family: Arial, sans-serif; font-size: 12pt; white-space: pre-wrap;">Date: 09 January, 2026
+
+TO WHOM IT MAY CONCERN
+
+This is to certify that [Patient e] aged [Age] has been examined on [Date] and is advised a rest period of [Days] due to [Diagnosis].
+
+
+____________________________
+Doctor's Notes / Instructions</pre>
+            </div>
+            
+            <div class="signature">
+                Physician Signature:
+                <br>
+                ________________________________
+            </div>
+
+        </div>
+    </body>
+    </html>
+    
