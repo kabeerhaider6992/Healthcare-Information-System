@@ -47,7 +47,13 @@ A full-featured desktop-based application built using Python and SQLite for mana
 
 ## 📸 Screenshots
 
-*(Add screenshots here if available for better presentation)*
+1im.PNG
+2im.PNG
+3im.PNG
+4im.PNG
+5im.PNG
+6im.PNG
+7im.PNG
 
 ---
 
